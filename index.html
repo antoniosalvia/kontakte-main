@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projekt Kontakte - JS DOM, JS Objects, localstorage</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="lead">Neuen Kontakt erfassen</h1>
+
+        <!-- FORM -->
+        <form class="form" id="form">
+            
+            <div class="form-input">
+                <label for="firstname">Vorname</label>
+                <input type="text" name="firstname" id="firstnameId" placeholder="Vorname eintragen">
+                <small>Fehlermeldung</small>
+            </div>
+
+            <div class="form-input">
+                <label for="lastname">Nachname</label>
+                <input type="text" name="lastname" id="lastnameId" placeholder="Nachname eintragen">
+                <small>Fehlermeldung</small>
+            </div>
+
+            <div class="form-input">
+                <label for="phone">Telefonnr.</label>
+                <input type="text" name="phone" id="phoneId" placeholder="Telefonnr. eintragen">
+                <small>Fehlermeldung</small>
+            </div>
+
+            <div class="form-input">
+                <label for="email">E-Mailadresse</label>
+                <input type="text" name="email" id="emailId" placeholder="E-Mail eintragen">
+                <small>Fehlermeldung</small>
+            </div>
+
+            <button>Neuen Kontakt hinzufügen</button>  
+
+        </form>
+
+        <!-- OUTPUT -->
+        <div class="contacts">
+            <h2>Meine Kontakte</h2>
+            <input type="text" id="search" placeholder="Suche Kontakt">
+
+            <ul id="list" class="contacts-list">
+            
+            </ul>
+        </div>
+
+        <button id="clearLocalStorage-btn">LocalStorage leeren</button>
+
+    </div>
+   
+    <script src="js/script.js"></script>
+
+</body>
+</html>
